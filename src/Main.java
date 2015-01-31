@@ -1,4 +1,6 @@
-
+/*
+ * (c) Samy Chambi and Daniel Lemire
+ */
 
 import java.text.DecimalFormat;
 import java.util.Arrays;
