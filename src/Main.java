@@ -156,7 +156,7 @@ public class Main {
                 	launchBench(seuils, TIMES, gen, sizeof, verbose);
                 }
                 else {
-                	int[] seuils = {/*1024,*/ 4096, 8192, 16384};
+                	int[] seuils = {1024, 4096, 8192, 16384};
                 	launchBench(seuils, TIMES, gen, sizeof, verbose);
                 }                
                 System.out.println("#ignore = " + bogus);
@@ -166,7 +166,7 @@ public class Main {
          long bef, aft;
          DecimalFormat df = new DecimalFormat("0.000E0");
          DecimalFormat dfb = new DecimalFormat("000.0");
-        for(int seuil=0; seuil<1/*seuils.length*/; seuil++) {
+        for(int seuil=0; seuil<seuils.length; seuil++) {
         	
         	if(verbose) System.out.println("\nRoaring bitmap/array conversion threshold = "+seuils[seuil]+"\n");
         	
